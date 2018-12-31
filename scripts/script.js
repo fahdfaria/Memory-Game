@@ -56,7 +56,7 @@ const imagesArray = [
 ];
 
 
-  duplicateImages = imagesArray.concat(imagesArray)
+  duplicateImages = imagesArray.concat(imagesArray);
 
   duplicateImages = randomizer(duplicateImages, 18);
 
@@ -74,12 +74,12 @@ const imagesArray = [
       front.style.background = "url('./images/Question_mark_card.png') no-repeat"
 
       var back = document.createElement("div");
-      back.classList.add("back")
+      back.classList.add("back");
       back.style.backgroundImage = `url(${images.img})`;
 
       imageSection.appendChild(image);
-      image.appendChild(front)
-      image.appendChild(back)
+      image.appendChild(front);
+      image.appendChild(back);
 
   });
 
@@ -95,9 +95,9 @@ const imagesArray = [
       count ++;
 
       if (count === 1) {
-        e.target.parentNode.classList.add("selected")
-        clickedImage1 = new Object
-        clickedImage1 = e.target.parentElement
+        e.target.parentNode.classList.add("selected");
+        clickedImage1 = new Object;
+        clickedImage1 = e.target.parentElement;
       }
 
       if (count === 2) {
@@ -115,7 +115,7 @@ const imagesArray = [
                   attempts += 1;
 
                   clickedImage1.classList.remove("selected");
-                  clickedImage2.classList.remove("selected")
+                  clickedImage2.classList.remove("selected");
 
                   console.log("not same");
 
@@ -130,10 +130,10 @@ const imagesArray = [
       }, 580);
 
 
-      };
+      }
 
 
-    };
+    }
 
       console.log(count);
       console.log(attempts);
@@ -143,10 +143,10 @@ const imagesArray = [
 
         var score = document.getElementById("score");
 
-        score.innerHTML = `You took ${attempts} attempts to locate all ${correctCombo}`
+        score.innerHTML = `You took ${attempts} attempts to locate all pictures`;
 
       }
 
   });
 
-}
+};

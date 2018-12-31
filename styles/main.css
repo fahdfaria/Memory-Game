@@ -60,6 +60,10 @@ h1{
   width: 10rem;
 }
 
+.front{
+  border-radius: 0.2rem;
+}
+
 .back,
 .front {
   position: absolute;
