@@ -71,7 +71,7 @@ const imagesArray = [
 
       var front = document.createElement("div");
       front.classList.add("front");
-      front.style.background = "url('./images/Question_mark_card.png') no-repeat center/ contain"
+      front.style.background = "url('./images/Question_mark_card.png') no-repeat center / contain"
 
       var back = document.createElement("div");
       back.classList.add("back");
