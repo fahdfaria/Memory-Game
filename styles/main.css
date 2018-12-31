@@ -68,19 +68,12 @@ h1{
 .front {
   position: fixed;
   backface-visibility: hidden;
-  transition: 500ms;
-  z-index: 1000;
-  -webkit-transition: 500ms;
--o-transition: 500ms;
   /* background: url("/images/Question_mark_card.png") no-repeat center / contain; */
 }
 
 .back{
   -webkit-transform: rotateY(180deg);
   -webkit-transition: 500ms;
--o-transition: 500ms;
-  transition: 500ms;
-  z-index: 1000;
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
