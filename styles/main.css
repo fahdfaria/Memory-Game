@@ -16,6 +16,24 @@ body{
   background: black;
 }
 
+h1{
+  color: red;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.copyright{
+  position: relative;
+  color: white;
+  float: right;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  margin-right: 2rem;
+
+}
+
 #bodyContainer{
   margin-top: 5rem;
 }
@@ -46,7 +64,7 @@ body{
 .front {
   position: absolute;
   backface-visibility: hidden;
-  /* background: url("/images/Question_mark_card.png") no-repeat center center / contain; */
+  background: url("/images/Question_mark_card.png") no-repeat center / contain;
 }
 
 .back{
