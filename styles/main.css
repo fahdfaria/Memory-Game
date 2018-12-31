@@ -64,7 +64,7 @@ h1{
 .front {
   position: absolute;
   backface-visibility: hidden;
-  background: url("/images/Question_mark_card.png") no-repeat center / contain;
+  /* background: url("/images/Question_mark_card.png") no-repeat center / contain; */
 }
 
 .back{
