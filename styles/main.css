@@ -72,7 +72,8 @@ h1{
 }
 
 .back{
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
@@ -80,7 +81,8 @@ h1{
 }
 
 .selected {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+
 }
 
 /* .same, .front{
