@@ -73,11 +73,11 @@ h1{
 
 .back{
   -webkit-transform: rotateY(180deg);
-  -webkit-transition: 500ms;
-  background-color: black;
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
+  background-size: contain;
+  /* -webkit-transition: 500ms; */
+
 }
 
 .selected {
