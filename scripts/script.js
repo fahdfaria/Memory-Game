@@ -71,10 +71,10 @@ const imagesArray = [
 
       var front = document.createElement("div");
       front.classList.add("front");
+      front.style.background = "url('./images/Question_mark_card.png') no-repeat"
 
       var back = document.createElement("div");
       back.classList.add("back")
-
       back.style.backgroundImage = `url(${images.img})`;
 
       imageSection.appendChild(image);
