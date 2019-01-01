@@ -62,6 +62,9 @@ const imagesArray = [
 
   var imageSection = document.getElementById("imageSection");
 
+  imageSection.style.display = "flex";
+  imageSection.style.flexWrap = "wrap";
+
     duplicateImages.forEach(images => {
 
       var image = document.createElement("div");
