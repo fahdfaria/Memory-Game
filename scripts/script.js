@@ -81,6 +81,7 @@ const imagesArray = [
       back.style.backgroundPosition = "center";
       back.style.backgroundSize = "contain";
       back.style.backfaceVisibility = "hidden";
+      back.style.transform = "rotateY(180deg)"
 
       imageSection.appendChild(image);
       image.appendChild(front);
@@ -103,6 +104,7 @@ const imagesArray = [
         e.target.parentNode.classList.add("selected");
         clickedImage1 = new Object;
         clickedImage1 = e.target.parentElement;
+  
       }
 
       if (count === 2 && count < 3) {
