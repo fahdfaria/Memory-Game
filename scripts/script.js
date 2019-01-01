@@ -103,8 +103,6 @@ const imagesArray = [
       }
 
       if (count === 2) {
-
-
         e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage2 = new Object;
         clickedImage2 = e.target.parentElement;
@@ -113,18 +111,16 @@ const imagesArray = [
 
         if (clickedImage1.dataset.name != clickedImage2.dataset.name ) {
 
-                  attempts += 1;
-
-                  clickedImage1.style.transform = "";
-                  clickedImage2.style.transform = "";
-
-                  console.log("not same");
+        attempts += 1;
+        clickedImage1.style.transform = "";
+        clickedImage2.style.transform = "";
+        console.log("not same");
 
         }else
 
         if (clickedImage1.dataset.name === clickedImage2.dataset.name) {
 
-                  correctCombo ++
+        correctCombo ++
 
         }
 
