@@ -83,11 +83,12 @@ const imagesArray = [
       var back = document.createElement("div");
       back.classList.add("back");
       back.style.position = "absolute"
+      back.style.backfaceVisibility = "hidden";
       back.style.backgroundImage = `url(${images.img})`;
+      back.style.backgroundColor = "black"
       back.style.backgroundRepeat = "no-repeat";
       back.style.backgroundPosition = "center";
       back.style.backgroundSize = "contain";
-      back.style.backfaceVisibility = "hidden";
       back.style.transform = "rotateY(180deg)";
 
       imageSection.appendChild(image);
