@@ -77,7 +77,10 @@ const imagesArray = [
       var back = document.createElement("div");
       back.classList.add("back");
       back.style.backgroundImage = `url(${images.img})`;
-      back.style.backfaceVisibility = "hidden"
+      back.style.backgroundRepeat = "no-repeat";
+      back.style.backgroundPosition = "center";
+      back.style.backgroundSize = "contain";
+      back.style.backfaceVisibility = "hidden";
 
       imageSection.appendChild(image);
       image.appendChild(front);
@@ -102,7 +105,7 @@ const imagesArray = [
         clickedImage1 = e.target.parentElement;
       }
 
-      if (count === 2) {
+      if (count === 2 && count < 3) {
 
         count = 0;
 
