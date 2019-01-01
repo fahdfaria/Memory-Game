@@ -104,10 +104,10 @@ const imagesArray = [
         e.target.parentNode.classList.add("selected");
         clickedImage1 = new Object;
         clickedImage1 = e.target.parentElement;
-  
+
       }
 
-      if (count === 2 && count < 3) {
+      if (count === 2) {
 
         count = 0;
 
@@ -126,7 +126,7 @@ const imagesArray = [
 
                   console.log("not same");
 
-        }
+        }else
 
         if (clickedImage1.dataset.name === clickedImage2.dataset.name) {
 

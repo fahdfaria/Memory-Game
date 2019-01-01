@@ -63,19 +63,11 @@ h1{
   width: 10rem;
 }
 
-.front{
-  border-radius: 0.2rem;
-}
-
 .back,
 .front {
-  position: fixed;
+  position: absolute;
 }
 
-.back{
-  /* -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg); */
-}
 
 .selected {
   -webkit-transform: rotateY(180deg);
