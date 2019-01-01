@@ -93,9 +93,9 @@ const imagesArray = [
 
 
 
-  let count = 0;
   let attempts = 0;
   let correctCombo = 0;
+  let count = 0;
 
   imageSection.addEventListener('click', function (e) {
 
@@ -111,7 +111,6 @@ const imagesArray = [
 
       if (count === 2) {
 
-        count = 0;
 
         e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage2 = new Object;
@@ -138,6 +137,7 @@ const imagesArray = [
 
       }, 580);
 
+      count = 0;
 
       }
 

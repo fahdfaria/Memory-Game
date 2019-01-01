@@ -54,6 +54,7 @@ h1{
 .front {
   height: 10rem;
   width: 10rem;
+  transform: translateZ(5rem)
 }
 
 .back,
