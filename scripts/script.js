@@ -81,7 +81,7 @@ const imagesArray = [
       back.style.backgroundPosition = "center";
       back.style.backgroundSize = "contain";
       back.style.backfaceVisibility = "hidden";
-      back.style.transform = "rotateY(180deg)"
+      back.style.transform = "rotateY(180deg)";
 
       imageSection.appendChild(image);
       image.appendChild(front);
@@ -101,7 +101,7 @@ const imagesArray = [
       count ++;
 
       if (count === 1) {
-        e.target.parentNode.classList.add("selected");
+        e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage1 = new Object;
         clickedImage1 = e.target.parentElement;
 
@@ -111,7 +111,7 @@ const imagesArray = [
 
         count = 0;
 
-        e.target.parentNode.classList.add("selected")
+        e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage2 = new Object;
         clickedImage2 = e.target.parentElement;
 
@@ -121,8 +121,8 @@ const imagesArray = [
 
                   attempts += 1;
 
-                  clickedImage1.classList.remove("selected");
-                  clickedImage2.classList.remove("selected");
+                  clickedImage1.style.transform = "";
+                  clickedImage2.style.transform = "";
 
                   console.log("not same");
 

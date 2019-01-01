@@ -69,11 +69,11 @@ h1{
 }
 
 
-.selected {
+/* .selected {
   -webkit-transform: rotateY(180deg);
 transform: rotateY(180deg);
 
-}
+} */
 
 #score{
   color: white;
