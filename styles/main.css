@@ -57,8 +57,8 @@ h1{
 .card,
 .back,
 .front {
-  height: 160px;
-  width: 160px;
+  height: 10rem;
+  width: 10rem;
 }
 
 .front{
@@ -68,27 +68,22 @@ h1{
 .back,
 .front {
   position: fixed;
-  /* backface-visibility: hidden; */
-  /* background: url("/images/Question_mark_card.png") no-repeat center / contain; */
 }
 
 .back{
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* -webkit-transition: 500ms; */
 
 }
 
 .selected {
 transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
 
 }
-
-/* .same, .front{
-  background: white !important;
-} */
 
 #score{
   color: white;
