@@ -49,7 +49,9 @@ h1{
 
 .card {
   position: relative;
+  overflow: visible ;
   transition: all .4s linear;
+   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 0.2rem;
 }
@@ -71,8 +73,8 @@ h1{
 }
 
 .back{
-  transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -80,8 +82,8 @@ h1{
 }
 
 .selected {
+  -webkit-transform: rotateY(180deg);
 transform: rotateY(180deg);
--webkit-transform: rotateY(180deg);
 
 }
 
