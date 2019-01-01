@@ -67,9 +67,9 @@ const imagesArray = [
       var image = document.createElement("div");
       image.classList.add("card");
       image.style.transition = "all .4s linear";
+      image.style.transformStyle = "preserve-3d";
 
       image.dataset.name = images.name;
-      image.style.transformStyle = "preserve-3d";
 
       var front = document.createElement("div");
       front.classList.add("front");
