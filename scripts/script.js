@@ -92,7 +92,9 @@ const imagesArray = [
   imageSection.addEventListener('click', function (e) {
 
     if (e.target.parentNode.classList == "card") {
+
       count++
+
       if (count === 1) {
         e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage1 = new Object;
@@ -110,6 +112,7 @@ const imagesArray = [
         if (clickedImage1.dataset.name != clickedImage2.dataset.name ) {
 
         clickedImage1.style.transform = "";
+
         clickedImage2.style.transform = "";
 
         attempts++;
