@@ -15,7 +15,6 @@ window.onload = () => {
   return shuffled.slice(min);
 }
 
-// Card data
 const imagesArray = [
   {
     'name': 'dog',
@@ -112,7 +111,9 @@ const imagesArray = [
 
         clickedImage1.style.transform = "";
         clickedImage2.style.transform = "";
+
         attempts++;
+
         console.log("not same");
 
         }else
@@ -144,6 +145,7 @@ const imagesArray = [
         score.innerHTML = `You took ${attempts} attempts to locate ${correctCombo} simalar images.`;
 
       }
+
 
   });
 
