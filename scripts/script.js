@@ -62,26 +62,19 @@ const imagesArray = [
 
   var imageSection = document.getElementById("imageSection");
 
-  imageSection.style.display = "flex";
-  imageSection.style.flexWrap = "wrap";
-
     duplicateImages.forEach(images => {
 
       var image = document.createElement("div");
       image.classList.add("card");
-      image.style.transition = "all .4s linear";
-      image.style.transformStyle = "preserve-3d";
 
       image.dataset.name = images.name;
 
       var front = document.createElement("div");
       front.classList.add("front");
-      front.style.backfaceVisibility = "hidden";
       front.style.background = "url('./images/Question_mark_card.png') no-repeat center / contain"
 
       var back = document.createElement("div");
       back.classList.add("back");
-      back.style.backfaceVisibility = "hidden";
       back.style.background = `url(${images.img}) no-repeat center / contain`;
       back.style.transform = "rotateY(180deg)";
 
@@ -100,7 +93,7 @@ const imagesArray = [
   imageSection.addEventListener('click', function (e) {
 
     if (e.target.parentNode.classList == "card") {
-      count ++;
+      count += 1;
 
       if (count === 1) {
         e.target.parentElement.style.transform = "rotateY(180deg)";

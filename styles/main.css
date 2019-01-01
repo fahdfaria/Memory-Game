@@ -41,12 +41,16 @@ h1{
 
 .imggrid {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
   position: relative;
   margin: 0.2rem;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
 }
 
 .card,
@@ -54,13 +58,14 @@ h1{
 .front {
   height: 10rem;
   width: 10rem;
-  transform: translateZ(5rem)
 }
 
 .back,
 .front{
-
-  position: fixed
+  position: fixed;
+  transform: translateZ(5rem);
+  -webkit-transform: translateZ(5rem);
+  backface-visibility: hidden;
 }
 
 #score{
