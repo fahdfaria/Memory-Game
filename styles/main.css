@@ -56,6 +56,11 @@ h1{
   width: 10rem;
 }
 
+.back,
+.front{
+
+  position: fixed
+}
 
 #score{
   color: white;

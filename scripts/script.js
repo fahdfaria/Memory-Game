@@ -19,7 +19,7 @@ window.onload = () => {
 const imagesArray = [
   {
     'name': 'dog',
-    'img': 'images/test.png',
+    'img': 'images/dog.gif',
   },
   {
     'name': 'kangaroo',
@@ -76,19 +76,13 @@ const imagesArray = [
 
       var front = document.createElement("div");
       front.classList.add("front");
-      front.style.position = "absolute"
       front.style.backfaceVisibility = "hidden";
       front.style.background = "url('./images/Question_mark_card.png') no-repeat center / contain"
 
       var back = document.createElement("div");
       back.classList.add("back");
-      back.style.position = "absolute"
       back.style.backfaceVisibility = "hidden";
-      back.style.backgroundImage = `url(${images.img})`;
-      back.style.backgroundColor = "black"
-      back.style.backgroundRepeat = "no-repeat";
-      back.style.backgroundPosition = "center";
-      back.style.backgroundSize = "contain";
+      back.style.background = `url(${images.img}) no-repeat center / contain`;
       back.style.transform = "rotateY(180deg)";
 
       imageSection.appendChild(image);
