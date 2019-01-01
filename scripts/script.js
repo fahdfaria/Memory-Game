@@ -19,7 +19,7 @@ window.onload = () => {
 const imagesArray = [
   {
     'name': 'dog',
-    'img': 'images/dog.gif',
+    'img': 'images/test.png',
   },
   {
     'name': 'kangaroo',
