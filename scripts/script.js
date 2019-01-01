@@ -93,8 +93,7 @@ const imagesArray = [
   imageSection.addEventListener('click', function (e) {
 
     if (e.target.parentNode.classList == "card") {
-      count += 1;
-
+      count++
       if (count === 1) {
         e.target.parentElement.style.transform = "rotateY(180deg)";
         clickedImage1 = new Object;
@@ -111,22 +110,23 @@ const imagesArray = [
 
         if (clickedImage1.dataset.name != clickedImage2.dataset.name ) {
 
-        attempts += 1;
         clickedImage1.style.transform = "";
         clickedImage2.style.transform = "";
+        attempts++;
         console.log("not same");
 
         }else
 
         if (clickedImage1.dataset.name === clickedImage2.dataset.name) {
 
-        correctCombo ++
+          correctCombo ++
 
         }
 
       }, 580);
 
       count = 0;
+
 
       }
 
@@ -137,11 +137,11 @@ const imagesArray = [
       console.log(attempts);
       console.log(correctCombo);
 
-      if (correctCombo == 8) {
+      if (correctCombo > 0) {
 
         var score = document.getElementById("score");
 
-        score.innerHTML = `You took ${attempts} attempts to locate all pictures`;
+        score.innerHTML = `You took ${attempts} attempts to locate ${correctCombo} simalar images.`;
 
       }
 
