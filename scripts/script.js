@@ -73,11 +73,13 @@ const imagesArray = [
 
       var front = document.createElement("div");
       front.classList.add("front");
+      front.style.position = "absolute"
       front.style.background = "url('./images/Question_mark_card.png') no-repeat center / contain"
       front.style.backfaceVisibility = "hidden";
 
       var back = document.createElement("div");
       back.classList.add("back");
+      back.style.position = "absolute"
       back.style.backgroundImage = `url(${images.img})`;
       back.style.backgroundRepeat = "no-repeat";
       back.style.backgroundPosition = "center";
