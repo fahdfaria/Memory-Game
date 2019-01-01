@@ -50,6 +50,7 @@ h1{
   position: relative;
   margin: 0.2rem;
   transition: all .4s linear;
+  -webkit-transition: all .4s linear;
 }
 
 .card,
@@ -58,17 +59,16 @@ h1{
   height: 10rem;
   width: 10rem;
   transform-style: preserve-3d;
+  transform: translateZ(5rem);
+  -webkit-transform: translateZ(5rem);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 .back,
 .front{
   position: fixed;
-  transform: translateZ(5rem);
-  
-  -webkit-transform: translateZ(5rem);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility:    hidden;
-  -ms-backface-visibility:     hidden;
 }
 
 #score{
