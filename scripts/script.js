@@ -127,7 +127,7 @@ const imagesArray = [
 
         }
 
-      }, 580);
+      }, 600);
 
       count = 0;
 
@@ -145,7 +145,7 @@ const imagesArray = [
 
         var score = document.getElementById("score");
 
-        score.innerHTML = `You took ${attempts} attempts to locate ${correctCombo} simalar images.`;
+        score.innerHTML = `You took ${attempts} attempts to locate ${correctCombo} similar images.`;
 
       }
 
